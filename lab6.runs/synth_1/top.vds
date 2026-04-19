@@ -1,0 +1,596 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Nov 25 02:12:47 2025
+# Process ID         : 2645856
+# Current directory  : /home/sir/work/cse100/lab6/lab6.runs/synth_1
+# Command line       : vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : /home/sir/work/cse100/lab6/lab6.runs/synth_1/top.vds
+# Journal file       : /home/sir/work/cse100/lab6/lab6.runs/synth_1/vivado.jou
+# Running On         : napkin
+# Platform           : Arch
+# Operating System   : Arch Linux
+# Processor Detail   : AMD Ryzen 9 9900X 12-Core Processor
+# CPU Frequency      : 5572.615 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 64887 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 64887 MB
+# Available Virtual  : 55141 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/sir/work/cse100/lab6/lab6.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/sir/work/cse100/lab6/lab6.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2645893
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1833.602 ; gain = 398.848 ; free physical = 14096 ; free virtual = 51562
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:41]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:77]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:84]
+WARNING: [Synth 8-6901] identifier 'start_frame_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:48]
+WARNING: [Synth 8-6901] identifier 'start_frame_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:49]
+WARNING: [Synth 8-6901] identifier 'lives_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:51]
+WARNING: [Synth 8-6901] identifier 'lives_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:52]
+WARNING: [Synth 8-6901] identifier 'lives_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:53]
+WARNING: [Synth 8-6901] identifier 'lives_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:54]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/slug_fsm.v:49]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/slug_fsm.v:70]
+WARNING: [Synth 8-6901] identifier 'state_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/slug_fsm.v:44]
+WARNING: [Synth 8-6901] identifier 'state_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/slug_fsm.v:44]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:72]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:82]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:90]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:124]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:134]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:142]
+WARNING: [Synth 8-6901] identifier 'train2_height_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:59]
+WARNING: [Synth 8-6901] identifier 'train2_top_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:59]
+WARNING: [Synth 8-6901] identifier 'train1_delay_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:62]
+WARNING: [Synth 8-6901] identifier 'train1_top_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:63]
+WARNING: [Synth 8-6901] identifier 'train2_delay_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:114]
+WARNING: [Synth 8-6901] identifier 'train2_top_q' is used before its declaration [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:115]
+INFO: [Synth 8-11241] undeclared symbol 'collision', assumed default net type 'wire' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/top.v:96]
+WARNING: [Synth 8-8895] 'collision' is already implicitly declared on line 96 [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/top.v:225]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'labVGA_clks' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:55]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 36.500000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:55]
+INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:188]
+INFO: [Synth 8-6157] synthesizing module 'CB4CE_MXILINX_clkcntrl4' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:304]
+INFO: [Synth 8-6157] synthesizing module 'FTCE_MXILINX_clkcntrl4' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:274]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'XOR2' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:154962]
+INFO: [Synth 8-6155] done synthesizing module 'XOR2' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:154962]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:42972]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:42972]
+INFO: [Synth 8-6155] done synthesizing module 'FTCE_MXILINX_clkcntrl4' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:274]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:1573]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:1573]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:1525]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:1525]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:1477]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:1477]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:152736]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:152736]
+INFO: [Synth 8-6155] done synthesizing module 'CB4CE_MXILINX_clkcntrl4' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:304]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:188]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:38]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149215]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149215]
+INFO: [Synth 8-6155] done synthesizing module 'labVGA_clks' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vga_timing' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/vga_timing.v:5]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+INFO: [Synth 8-6155] done synthesizing module 'vga_timing' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/vga_timing.v:5]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/new/edge_detector.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/new/edge_detector.v:3]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector__parameterized0' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/new/edge_detector.v:3]
+	Parameter STROBE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector__parameterized0' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/new/edge_detector.v:3]
+INFO: [Synth 8-6157] synthesizing module 'game_fsm' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized1' [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized1' (0#1) [/opt/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+INFO: [Synth 8-6155] done synthesizing module 'game_fsm' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/game_fsm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'lfsr' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/new/lfsr.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/new/lfsr.v:3]
+INFO: [Synth 8-6157] synthesizing module 'slug_fsm' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/slug_fsm.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'slug_fsm' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/slug_fsm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'train_fsm' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:4]
+	Parameter LEFT_COLUMN bound to: 16'b0000000011111000 
+	Parameter DESPAWN bound to: 472 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'train_fsm' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:4]
+INFO: [Synth 8-6157] synthesizing module 'train_fsm__parameterized0' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:4]
+	Parameter LEFT_COLUMN bound to: 16'b0000000100111110 
+	Parameter NEXT_TRAIN_SPAWN bound to: 440 - type: integer 
+	Parameter DESPAWN bound to: 472 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'train_fsm__parameterized0' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:4]
+INFO: [Synth 8-6157] synthesizing module 'train_fsm__parameterized1' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:4]
+	Parameter LEFT_COLUMN bound to: 16'b0000000110000100 
+	Parameter DESPAWN bound to: 472 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'train_fsm__parameterized1' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/train_fsm.v:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_renderer' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/vga_renderer.v:3]
+	Parameter OVERSCAN_X bound to: 16'b0000000000000000 
+	Parameter OVERSCAN_Y bound to: 16'b0000000000000000 
+	Parameter TRAIN_L_LEFT bound to: 16'b0000000011111000 
+	Parameter TRAIN_C_LEFT bound to: 16'b0000000100111110 
+	Parameter TRAIN_R_LEFT bound to: 16'b0000000110000100 
+	Parameter TRAIN_WIDTH bound to: 16'b0000000000111100 
+INFO: [Synth 8-6155] done synthesizing module 'vga_renderer' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/vga_renderer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/imports/new/ring_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ror' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/imports/new/ring_counter.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ror' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/imports/new/ring_counter.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/imports/new/ring_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/imports/new/hex7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/imports/imports/new/hex7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/top.v:3]
+WARNING: [Synth 8-3848] Net led_o in module/entity top does not have driver. [/home/sir/work/cse100/lab6/lab6.srcs/sources_1/new/top.v:16]
+WARNING: [Synth 8-3917] design top has port dp_o driven by constant 1
+WARNING: [Synth 8-7129] Port clk_i in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[15] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[14] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[13] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[12] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[11] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[10] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[9] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[8] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[7] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[4] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[3] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[2] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[1] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_i[0] in module vga_renderer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[15] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[14] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[13] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[12] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[11] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[10] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[9] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[8] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[7] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[6] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[5] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[4] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[3] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[2] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[1] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[0] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rng_i[7] in module train_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[15] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[14] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[13] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[12] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[11] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[10] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[9] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[8] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[7] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[6] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[5] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[4] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[3] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[2] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[1] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[0] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rng_i[7] in module train_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[15] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[14] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[13] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[12] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[11] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[10] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[9] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[8] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[7] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[6] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[5] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[4] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[3] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[2] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[1] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[0] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rng_i[7] in module train_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[15] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[14] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[13] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[12] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[11] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[10] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[9] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[8] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[7] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[6] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[5] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[4] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[3] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[2] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[1] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_frame_i[0] in module slug_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[8] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_o[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw_i[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw_i[14] in module top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1916.570 ; gain = 481.816 ; free physical = 14010 ; free virtual = 51477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1931.414 ; gain = 496.660 ; free physical = 14002 ; free virtual = 51469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1931.414 ; gain = 496.660 ; free physical = 14002 ; free virtual = 51469
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1937.352 ; gain = 0.000 ; free physical = 13968 ; free virtual = 51435
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:234]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:234]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:235]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:235]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:236]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:236]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:237]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:237]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:238]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:239]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:240]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:241]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:242]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:242]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:243]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:243]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:244]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:244]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:245]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:245]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:246]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:246]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:247]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:247]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:248]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:248]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:249]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:249]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:250]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:251]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:252]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:253]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:253]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:254]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:254]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:255]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:255]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:256]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:257]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:258]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:258]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:259]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:260]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:260]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:261]
+ADVISORY: [Common 17-55] 'set_property' expects at least one object. [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sir/work/cse100/lab6/lab6.srcs/constrs_1/imports/cse100/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2079.164 ; gain = 0.000 ; free physical = 13937 ; free virtual = 51404
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  AND2 => LUT2: 12 instances
+  AND3 => LUT3: 6 instances
+  AND4 => LUT4: 6 instances
+  BUF => LUT1: 1 instance 
+  XOR2 => LUT2: 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2079.164 ; gain = 0.000 ; free physical = 13937 ; free virtual = 51404
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2079.164 ; gain = 644.410 ; free physical = 13950 ; free virtual = 51418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2087.168 ; gain = 652.414 ; free physical = 13950 ; free virtual = 51418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2087.168 ; gain = 652.414 ; free physical = 13950 ; free virtual = 51418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2087.168 ; gain = 652.414 ; free physical = 13934 ; free virtual = 51402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 9     
+	   2 Input   16 Bit       Adders := 32    
+	   2 Input    8 Bit       Adders := 2     
+	   4 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 9     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 16    
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 24    
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top has port dp_o driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (labVGA_clks/slowclk/XLXI_37/I_Q0/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (labVGA_clks/slowclk/XLXI_37/I_Q1/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (labVGA_clks/slowclk/XLXI_37/I_Q2/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (labVGA_clks/slowclk/XLXI_37/I_Q3/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (labVGA_clks/slowclk/XLXI_44/I_Q0/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (labVGA_clks/slowclk/XLXI_44/I_Q1/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (labVGA_clks/slowclk/XLXI_44/I_Q2/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (labVGA_clks/slowclk/XLXI_44/I_Q3/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (btnU_sync/FF_14) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (slug_fsm/genblk2[0].FF_70) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2087.168 ; gain = 652.414 ; free physical = 13964 ; free virtual = 51438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2108.168 ; gain = 673.414 ; free physical = 13966 ; free virtual = 51440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2226.246 ; gain = 791.492 ; free physical = 13853 ; free virtual = 51327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2226.246 ; gain = 791.492 ; free physical = 13848 ; free virtual = 51322
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2352.059 ; gain = 917.305 ; free physical = 13720 ; free virtual = 51193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2352.059 ; gain = 917.305 ; free physical = 13720 ; free virtual = 51193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2352.059 ; gain = 917.305 ; free physical = 13720 ; free virtual = 51193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2352.059 ; gain = 917.305 ; free physical = 13720 ; free virtual = 51193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2352.059 ; gain = 917.305 ; free physical = 13720 ; free virtual = 51193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2352.059 ; gain = 917.305 ; free physical = 13720 ; free virtual = 51193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2       |     8|
+|2     |AND3       |     4|
+|3     |AND4       |     4|
+|4     |BUF        |     1|
+|5     |BUFG       |     3|
+|6     |CARRY4     |   211|
+|7     |LUT1       |    91|
+|8     |LUT2       |   201|
+|9     |LUT3       |    76|
+|10    |LUT4       |   200|
+|11    |LUT5       |   367|
+|12    |LUT6       |   292|
+|13    |MMCME2_ADV |     1|
+|14    |STARTUPE2  |     1|
+|15    |XOR2       |    16|
+|16    |FDCE       |    16|
+|17    |FDRE       |   353|
+|18    |IBUF       |     7|
+|19    |OBUF       |    28|
+|20    |OBUFT      |    16|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2352.059 ; gain = 917.305 ; free physical = 13720 ; free virtual = 51193
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 74 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2352.059 ; gain = 769.555 ; free physical = 13720 ; free virtual = 51193
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2352.066 ; gain = 917.305 ; free physical = 13720 ; free virtual = 51193
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2352.066 ; gain = 0.000 ; free physical = 13890 ; free virtual = 51364
+INFO: [Netlist 29-17] Analyzing 246 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2408.086 ; gain = 0.000 ; free physical = 13877 ; free virtual = 51351
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 4 instances
+  AND4 => LUT4: 4 instances
+  BUF => LUT1: 1 instance 
+  XOR2 => LUT2: 16 instances
+
+Synth Design complete | Checksum: 6846e8e5
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 169 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 2408.086 ; gain = 973.348 ; free physical = 13869 ; free virtual = 51343
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1587.991; main = 1587.991; forked = 268.655
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2997.551; main = 2408.090; forked = 910.379
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.098 ; gain = 0.000 ; free physical = 13869 ; free virtual = 51343
+INFO: [Common 17-1381] The checkpoint '/home/sir/work/cse100/lab6/lab6.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 02:13:05 2025...

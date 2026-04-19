@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,645.120433 us"></ZoomStartTime>
+      <ZoomEndTime time="1,860.920434 us"></ZoomEndTime>
+      <Cursor1Time time="1,681.087099 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="244"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject type="logic" fp_name="/top/board_clk_i">
+      <obj_property name="ElementShortName">board_clk_i</obj_property>
+      <obj_property name="ObjectShortName">board_clk_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/hdmi_red_o">
+      <obj_property name="ElementShortName">hdmi_red_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hdmi_red_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/hdmi_green_o">
+      <obj_property name="ElementShortName">hdmi_green_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hdmi_green_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/hdmi_blue_o">
+      <obj_property name="ElementShortName">hdmi_blue_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hdmi_blue_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/hdmi_clk_o">
+      <obj_property name="ElementShortName">hdmi_clk_o</obj_property>
+      <obj_property name="ObjectShortName">hdmi_clk_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/hdmi_hsync_o">
+      <obj_property name="ElementShortName">hdmi_hsync_o</obj_property>
+      <obj_property name="ObjectShortName">hdmi_hsync_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/hdmi_vsync_o">
+      <obj_property name="ElementShortName">hdmi_vsync_o</obj_property>
+      <obj_property name="ObjectShortName">hdmi_vsync_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/hdmi_dispen_o">
+      <obj_property name="ElementShortName">hdmi_dispen_o</obj_property>
+      <obj_property name="ObjectShortName">hdmi_dispen_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/display">
+      <obj_property name="ElementShortName">display</obj_property>
+      <obj_property name="ObjectShortName">display</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/col_q">
+      <obj_property name="ElementShortName">col_q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">col_q[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/inc_row">
+      <obj_property name="ElementShortName">inc_row</obj_property>
+      <obj_property name="ObjectShortName">inc_row</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/row_q">
+      <obj_property name="ElementShortName">row_q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_q[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/frames_q">
+      <obj_property name="ElementShortName">frames_q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">frames_q[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/HBLANK">
+      <obj_property name="ElementShortName">HBLANK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HBLANK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/HSIZE">
+      <obj_property name="ElementShortName">HSIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HSIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/HSYNC_BEGIN">
+      <obj_property name="ElementShortName">HSYNC_BEGIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HSYNC_BEGIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/HSYNC_END">
+      <obj_property name="ElementShortName">HSYNC_END[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HSYNC_END[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/VBLANK">
+      <obj_property name="ElementShortName">VBLANK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VBLANK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/VSIZE">
+      <obj_property name="ElementShortName">VSIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VSIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/VSYNC_BEGIN">
+      <obj_property name="ElementShortName">VSYNC_BEGIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VSYNC_BEGIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/VSYNC_END">
+      <obj_property name="ElementShortName">VSYNC_END[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VSYNC_END[31:0]</obj_property>
+   </wvobject>
+</wave_config>
